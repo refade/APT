@@ -1,0 +1,423 @@
+{
+    "scans": {
+        "Bkav": {
+            "detected": false,
+            "version": "1.3.0.9899",
+            "result": null,
+            "update": "20210714"
+        },
+        "Lionic": {
+            "detected": true,
+            "version": "4.2",
+            "result": "Trojan.Win32.Lotok.m!c",
+            "update": "20210715"
+        },
+        "Elastic": {
+            "detected": false,
+            "version": "4.0.25",
+            "result": null,
+            "update": "20210710"
+        },
+        "MicroWorld-eScan": {
+            "detected": false,
+            "version": "14.0.409.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "FireEye": {
+            "detected": false,
+            "version": "32.44.1.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "CAT-QuickHeal": {
+            "detected": true,
+            "version": "14.00",
+            "result": "Backdoor.Lotok",
+            "update": "20210713"
+        },
+        "McAfee": {
+            "detected": true,
+            "version": "6.0.6.653",
+            "result": "Artemis!6F60A3487CE8",
+            "update": "20210715"
+        },
+        "Cylance": {
+            "detected": true,
+            "version": "2.3.1.101",
+            "result": "Unsafe",
+            "update": "20210715"
+        },
+        "VIPRE": {
+            "detected": false,
+            "version": "94004",
+            "result": null,
+            "update": "20210715"
+        },
+        "Sangfor": {
+            "detected": true,
+            "version": "2.9.0.0",
+            "result": "Backdoor.Win32.Lotok.avo",
+            "update": "20210625"
+        },
+        "K7AntiVirus": {
+            "detected": true,
+            "version": "11.194.37732",
+            "result": "Trojan ( 0055df3a1 )",
+            "update": "20210714"
+        },
+        "Alibaba": {
+            "detected": true,
+            "version": "0.3.0.5",
+            "result": "Backdoor:Win32/Lotok.b6e47c69",
+            "update": "20190527"
+        },
+        "K7GW": {
+            "detected": true,
+            "version": "11.194.37735",
+            "result": "Trojan ( 0055df3a1 )",
+            "update": "20210715"
+        },
+        "CrowdStrike": {
+            "detected": false,
+            "version": "1.0",
+            "result": null,
+            "update": "20210203"
+        },
+        "Arcabit": {
+            "detected": false,
+            "version": "1.0.0.886",
+            "result": null,
+            "update": "20210714"
+        },
+        "Baidu": {
+            "detected": false,
+            "version": "1.0.0.2",
+            "result": null,
+            "update": "20190318"
+        },
+        "Cyren": {
+            "detected": true,
+            "version": "6.3.0.2",
+            "result": "W32/Trojan.FNDP-6386",
+            "update": "20210715"
+        },
+        "Symantec": {
+            "detected": false,
+            "version": "1.15.0.0",
+            "result": null,
+            "update": "20210714"
+        },
+        "ESET-NOD32": {
+            "detected": false,
+            "version": "23627",
+            "result": null,
+            "update": "20210715"
+        },
+        "APEX": {
+            "detected": false,
+            "version": "6.186",
+            "result": null,
+            "update": "20210713"
+        },
+        "Paloalto": {
+            "detected": false,
+            "version": "1.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "ClamAV": {
+            "detected": false,
+            "version": "0.103.3.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "Kaspersky": {
+            "detected": true,
+            "version": "21.0.1.45",
+            "result": "Backdoor.Win32.Lotok.avo",
+            "update": "20210715"
+        },
+        "BitDefender": {
+            "detected": false,
+            "version": "7.2",
+            "result": null,
+            "update": "20210715"
+        },
+        "NANO-Antivirus": {
+            "detected": false,
+            "version": "1.0.146.25311",
+            "result": null,
+            "update": "20210714"
+        },
+        "SUPERAntiSpyware": {
+            "detected": false,
+            "version": "5.6.0.1032",
+            "result": null,
+            "update": "20210710"
+        },
+        "Avast": {
+            "detected": false,
+            "version": "21.1.5827.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "Tencent": {
+            "detected": false,
+            "version": "1.0.0.1",
+            "result": null,
+            "update": "20210715"
+        },
+        "Ad-Aware": {
+            "detected": false,
+            "version": "3.0.21.179",
+            "result": null,
+            "update": "20210715"
+        },
+        "TACHYON": {
+            "detected": true,
+            "version": "2021-07-15.01",
+            "result": "Backdoor/W32.Lotok.835584",
+            "update": "20210715"
+        },
+        "Sophos": {
+            "detected": true,
+            "version": "1.3.0.0",
+            "result": "Mal/Generic-R",
+            "update": "20210715"
+        },
+        "Comodo": {
+            "detected": false,
+            "version": "33711",
+            "result": null,
+            "update": "20210714"
+        },
+        "F-Secure": {
+            "detected": false,
+            "version": "12.0.86.52",
+            "result": null,
+            "update": "20210715"
+        },
+        "DrWeb": {
+            "detected": false,
+            "version": "7.0.49.9080",
+            "result": null,
+            "update": "20210715"
+        },
+        "Zillya": {
+            "detected": true,
+            "version": "2.0.0.4406",
+            "result": "Backdoor.Lotok.Win32.281",
+            "update": "20210713"
+        },
+        "TrendMicro": {
+            "detected": false,
+            "version": "11.0.0.1006",
+            "result": null,
+            "update": "20210715"
+        },
+        "McAfee-GW-Edition": {
+            "detected": true,
+            "version": "v2019.1.2+3728",
+            "result": "Artemis!Trojan",
+            "update": "20210714"
+        },
+        "CMC": {
+            "detected": false,
+            "version": "2.10.2019.1",
+            "result": null,
+            "update": "20210624"
+        },
+        "Emsisoft": {
+            "detected": false,
+            "version": "2018.12.0.1641",
+            "result": null,
+            "update": "20210715"
+        },
+        "SentinelOne": {
+            "detected": false,
+            "version": "5.2.0.9",
+            "result": null,
+            "update": "20210703"
+        },
+        "Jiangmin": {
+            "detected": true,
+            "version": "16.0.100",
+            "result": "Backdoor.Lotok.jm",
+            "update": "20210714"
+        },
+        "Webroot": {
+            "detected": false,
+            "version": "1.0.0.403",
+            "result": null,
+            "update": "20210715"
+        },
+        "Avira": {
+            "detected": false,
+            "version": "8.3.3.12",
+            "result": null,
+            "update": "20210715"
+        },
+        "Antiy-AVL": {
+            "detected": true,
+            "version": "3.0.0.1",
+            "result": "Trojan/Generic.ASMalwS.3098E12",
+            "update": "20210715"
+        },
+        "Kingsoft": {
+            "detected": false,
+            "version": "2017.9.26.565",
+            "result": null,
+            "update": "20210715"
+        },
+        "Gridinsoft": {
+            "detected": false,
+            "version": "1.0.47.140",
+            "result": null,
+            "update": "20210715"
+        },
+        "Microsoft": {
+            "detected": true,
+            "version": "1.1.18300.4",
+            "result": "Trojan:Win32/Bluteal!rfn",
+            "update": "20210715"
+        },
+        "ViRobot": {
+            "detected": false,
+            "version": "2014.3.20.0",
+            "result": null,
+            "update": "20210714"
+        },
+        "ZoneAlarm": {
+            "detected": false,
+            "version": "1.0",
+            "result": null,
+            "update": "20210715"
+        },
+        "GData": {
+            "detected": false,
+            "version": "A:25.30283B:27.23722",
+            "result": null,
+            "update": "20210715"
+        },
+        "Cynet": {
+            "detected": false,
+            "version": "4.0.0.27",
+            "result": null,
+            "update": "20210715"
+        },
+        "AhnLab-V3": {
+            "detected": false,
+            "version": "3.20.4.10148",
+            "result": null,
+            "update": "20210715"
+        },
+        "Acronis": {
+            "detected": false,
+            "version": "1.1.1.82",
+            "result": null,
+            "update": "20210512"
+        },
+        "BitDefenderTheta": {
+            "detected": false,
+            "version": "7.2.37796.0",
+            "result": null,
+            "update": "20210713"
+        },
+        "ALYac": {
+            "detected": false,
+            "version": "1.1.3.1",
+            "result": null,
+            "update": "20210715"
+        },
+        "MAX": {
+            "detected": false,
+            "version": "2019.9.16.1",
+            "result": null,
+            "update": "20210715"
+        },
+        "VBA32": {
+            "detected": true,
+            "version": "5.0.0",
+            "result": "Backdoor.Lotok",
+            "update": "20210714"
+        },
+        "Malwarebytes": {
+            "detected": false,
+            "version": "4.2.2.27",
+            "result": null,
+            "update": "20210715"
+        },
+        "Zoner": {
+            "detected": false,
+            "version": "0.0.0.0",
+            "result": null,
+            "update": "20210714"
+        },
+        "TrendMicro-HouseCall": {
+            "detected": false,
+            "version": "10.0.0.1040",
+            "result": null,
+            "update": "20210715"
+        },
+        "Rising": {
+            "detected": false,
+            "version": "25.0.0.26",
+            "result": null,
+            "update": "20210714"
+        },
+        "Yandex": {
+            "detected": false,
+            "version": "5.5.2.24",
+            "result": null,
+            "update": "20210714"
+        },
+        "Ikarus": {
+            "detected": true,
+            "version": "0.1.5.2",
+            "result": "Trojan.Win32.Crypt",
+            "update": "20210714"
+        },
+        "MaxSecure": {
+            "detected": true,
+            "version": "1.0.0.1",
+            "result": "Trojan.Malware.74607847.susgen",
+            "update": "20210714"
+        },
+        "Fortinet": {
+            "detected": true,
+            "version": "6.2.142.0",
+            "result": "W32/Lotok.AVO!tr.bdr",
+            "update": "20210715"
+        },
+        "Cybereason": {
+            "detected": false,
+            "version": "1.2.449",
+            "result": null,
+            "update": "20210330"
+        },
+        "Panda": {
+            "detected": false,
+            "version": "4.6.4.2",
+            "result": null,
+            "update": "20210714"
+        },
+        "Qihoo-360": {
+            "detected": false,
+            "version": "1.0.0.1300",
+            "result": null,
+            "update": "20210715"
+        }
+    },
+    "scan_id": "ffe171d3559188106d7a5142c4f82200a069fa5f48e35069c0d8655f92914826-1626346329",
+    "sha1": "a737e36d913a451c15b5d2b670e5f1c671b62529",
+    "resource": "ffe171d3559188106d7a5142c4f82200a069fa5f48e35069c0d8655f92914826",
+    "response_code": 1,
+    "scan_date": "2021-07-15 10:52:09",
+    "permalink": "https://www.virustotal.com/gui/file/ffe171d3559188106d7a5142c4f82200a069fa5f48e35069c0d8655f92914826/detection/f-ffe171d3559188106d7a5142c4f82200a069fa5f48e35069c0d8655f92914826-1626346329",
+    "verbose_msg": "Scan finished, information embedded",
+    "total": 68,
+    "positives": 21,
+    "sha256": "ffe171d3559188106d7a5142c4f82200a069fa5f48e35069c0d8655f92914826",
+    "md5": "6f60a3487ce868a98c7a30d32584f099"
+}
