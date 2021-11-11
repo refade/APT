@@ -142,3 +142,114 @@ This paper proposes a database aiming at the classification of 32-bit benign and
 Virtual plagues were extracted from databases provided by enthusiastic study groups as VirusShare. As for benign executables, the acquisition came from benign applications repositories such as sourceforge, github and sysinternals. It should be noted that all benign executables were submitted to VirusTotal and all were its benign attested by the main commercial antivirus worldwide. The diagnostics, provided by VirusTotal, corresponding to the benign and malware executables are available in the virtual address of our database.
 
 The purpose of the creation of the database is to give full possibility of the proposed methodology being replicated by third parties in future works. Therefore, the proposed article, by making its database freely available, enables transparency and impartiality to research, as well as demonstrating the veracity of the results achieved. Therefore, it is hoped that the methodology will serve as a basis for the creation of new scientific works.
+
+## Executable Feature Extraction
+
+The extraction of features of executables employs the process of disassembling. Then, the algorithm, referring to the executable, can be studied and later classified by the neural networks described in the next section. In total, 649 features of each executable are extracted, referring to the groups mentioned above. The pescanner tool are employed in order to extract the features of executables. Next, the groups of features extracted from the executables investigated are detailed.
+######	Histogram of instructions, in assembly, referring to the mnemonic.
+######	Number of subroutines invoking TLS (Transport Layer Security).
+######	Number of subroutines responsible for exporting data (exports).  
+######	APIs (Application Programming Interface) used by the executable.
+######	Features related to clues that the computer has suffered fragmentation on its hard disk, as well as accumulated invalid boot attempts.  
+######	Application execution mode. There are two options:
+-	software with a graphical interface (GUI);
+-	software running on the console.
+######	Features related to the Operating System. Our digital forensics examines if the tested file tries to:
+-	identify the current operating system user name;
+-	access APIs in order to create and manage current OS user profiles;
+-	detect the number of milliseconds since the system was initialized;
+-	execute an operation in a specific file;
+-	identify the version of the Windows Operating System in use;
+-	monitor internal message traffic among system processes;
+-	alter the Windows startup settings and contents (STARTUPINFO);  
+-	allow applications to access functionality provided by shell of the operating system, as well as alter it; 
+-	change the logon messages at Windows OS startup; 
+-	change native applications linked to standard dialog boxes in order to open and save files, choosing color and font, among other customizations;
+-	configure Windows Server licensing ; 
+-	configure Windows Server 2003;
+-	change the system's power settings;
+-	open a process, service, or native library of the Operating System; 
+-	exclude the context of certificates linked to the Operating System; 
+-	copy an existing file to a new file; 
+-	create, open, delete, or alter a file;
+-	create and execute new process(s); 
+-	create new directory(s); 
+-	search for specific file(s);  
+-	create a service object and add it to the control manager database for a certain service; 
+-	encrypt data. It is a typical strategy of ransomwares which sequester the victim's data through cryptography. To decrypt the data, the invader asks the user for a monetary amount so that he victim can have all his data back;
+-	access file systems, devices, processes, threads and error handling of the system;
+-	change the sound and audio device properties of the system;
+-	access graphical content information for monitors, printers, and other Windows OS output devices; 
+-	use and/or monitor the USB port;
+-	control a driver of a particular device; 
+-	investigate if a disk drive is a removable, fixed, CD / DVD-ROM, RAM or network drive;
+######	Features related to Windows Registry (Regedit). It is worth noting that the victim may not be free from malware infection even after its detection and elimination. The persistence of malefactions, even after malware exclusion, occurs due to the insertion of malicious entries (keys) in Regedit. Then, when the operating system boots, the cyber-attack restarts because of the malicious key invoking the vulnerability exploited by malware (eg: redirect Internet Explorer home page). Then, our antivirus audits if the suspicious application tries to:
+-	detect the NetBIOS name of the local computer. This name is established at system startup, when the system reads it in the registry (Regedit);
+-	terminate a key of a specific registry; 
+-	create a key from in a specific registry. If the key already exists in Regedit, then it will be read; 
+-	delete a key and its values in Regedit; 
+-	enumerate and   open subkeys of a specific open registry. 
+######	Features related to spywares such as keyloggers (capture of keyboard information in order to theft of passwords and logins) and screenloggers (screen shot of the victim). Our antivirus audits if the analyzed file tries to:
+-	detect in which part of the victim's screen there was an update;
+-	identify the screen update region by copying it to a particular region;
+-	capture AVI movies and videos from web cameras and other video hardware; 
+-	capture information on electronic voting, specifically from the company Optical Vote-Trakker;
+-	copy an array of keyboard key states. Such strategy is typical of keyloggers
+-	monitor user's Internet activity and private information;
+-	collect online bank passwords and other confidential information and to send the data to invader creator;
+-	access a computer from remote locations, stealing passwords, Internet banking and personal data; 
+-	create a BHO (Browser Helper Object) which is executed automatically every time when the web browser is started. It fits to emphasize that BHOs are not impeded by personal firewalls because they are identified as part of the browser. In a distorted way, BHOs are often used by adware and spyware in order to record keyboard and mouse entries
+-	locate passwords stored on a computer.
+######	Features related to Anti-forensic Digital which are techniques of removal, occultation and subversion of evidences with the goal of reducing the consequences of the results of forensic analyzes. Our antivirus investigates if the file tries to:
+-	Suspend its own execution until a certain timeout interval has elapsed. A typical malware strategy that maintains itself inactive until the end of commercial antivirus quarantine;
+-	Disable the victim's defense mechanisms, including Firewall and Antivirus;
+-	disable automatic Windows updates;
+-	detect if the own file is being scanned by an debugger of the Operating System;   
+-	retrieve information about the first and next process found in an Operating System snapshot. Such strategy is typical of malwares that aim to corrupt backups and restore points of the Operating System;
+-	hide one file in another. This strategy is named, technically, steganography which aims to hide malware in a benign program in the Task Manager;
+-	disguise its own name in the Task Manager;
+-	make use of libraries associated with Hackers Encyclopedia 2002;
+-	Create a ZeroAcess cyber-attack type through firmware updates of hardware devices (eg, hard drive controlled).
+######	Features related to the creation of GUI (Graphical User Interface) of the suspicious program. Our antivirus audits if the suspect file tries to: 
+-	create a GUI at runtime; 
+-	use DirectX which allows multimedia applications to draw 2D graphics; 
+-	create a module that contains bitmap compression and decompression routines used for Microsoft Video for Windows;
+-	create 3D graphics related to utilitarian functions used by OpenGL; 
+-	detect shapes through computer vision and digital image processing;
+-	access functionalities in order to create and to manage screen windows and more basic controls such as buttons and scrollbars, receive mouse and keyboard input, and other functionalities associated with the Windows GUI. This includes widgets like status bars, progress bars, toolbars, and guides; 
+######	Features related to the illicit forensic of the RAM (main memory) of the local system. Our antivirus investigates if the suspicious application tries to:
+-	access information in specific regions of main memory;
+-	read data from an area of memory occupied by a specific process;
+-	write data to a memory area in a specific process;
+-	reserve, confirm or alter the status of a page region in the virtual address space of a process.
+######	Features related to network traffic. It is checked if the suspect file tries to:
+-	query DNS servers;
+-	send request to an HTTP server; 
+-	monitor information of the headers of computer data packets associated with an HTTP request;
+-	send an ICMP IPv4 echo request; 
+-	send an SNMP request used to monitor LAN equipment;
+-	terminate the Internet connection;
+-	create an FTP or HTTP session at runtime; 
+-	fragment a URL at runtime; 
+-	query a server in order to determine the amount of traffic data available; 
+-	identify the connection state of the local system in relation to the Internet; 
+-	initialize the use of an application of the WinINet functions (Windows API for creating and using the application using the Internet); 
+-	read data from network packets made from previous local system requests (typical behavior of sniffers); 
+-	overwrite data in a local system network packet; 
+-	manage local and remote network systems; 
+-	create a network socket on the local system. In a conventional application, the server sends data to the client (s). In an opposite way, in malware, the victim sends the data (images, digits) to the server. Therefore, malware can create sockets on the local system waiting (listen) for a remote malicious computer to request a connection and, then, receive the victim's private information;
+-	receive data of a socket. Typical strategy of backdoors when the victim starts receiving remote commands; 
+-	send data to a socket. Typical strategies of spywares which, after capturing innermost information, they send them to a malicious remote computer; 
+######	Features related to utility applications programs. Our created antivirus checks if the suspicious file tries to:
+-	reproduce videos/audios through Windows Media Player; 
+-	change the shortcut icon and Internet default settings exhibited in the Explorer toolbar address bar; 
+-	alter the Wordpad configurations;
+-	alter the configurations of sockets, specifically, managed by Internet Explorer; 
+-	alter Outlook Express configurations and to access the victim’s  e-mail list; 
+-	access information linked to the Microsof Office; 
+-	alter the configurations of the Adobe System’s suite;
+-	change the system's disk cleanup configurations; 
+-	alter the settings of native digital electronic games and others linked to companies Tycoon and Electronic Arts;
+-	change Google Inc updates settings; 
+-	use Visual Basic. Such strategy is typical of macro viruses that are intended to infect applications that support macro language such as web browsers, Microsoft Office, and Adobe Systems.
+-	alter the access settings to Wikipedia.
